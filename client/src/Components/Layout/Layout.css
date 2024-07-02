@@ -1,0 +1,48 @@
+.Layout-section{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.media{
+    position: fixed; /* Makes the div fixed */
+    top: 0; /* Adjusts the position from the top */
+    left: 0; /* Adjusts the position from the left */
+    width: 100%; /* Optional: Adjusts the width */
+    background-color: white; /* Optional: Background color */
+    z-index: 1000; 
+    margin-top: 40vh;
+  }
+  .components{
+    margin-left: 40px;
+    margin-right: 40px;
+  
+  }
+  .iconbox{
+    display: flex;
+    justify-content: right;
+    font-size: 40px;
+    color: crimson;
+  }
+  
+  
+  
+  .icon-list {
+    font-size: 40px;
+    color: crimson;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .icon{
+    display:flex;
+  
+  
+    font-size: 40px;
+  color: crimson;
+  /* position: relative; */
+  /* Fixed position */
+  z-index: 1000; 
+  }
+  

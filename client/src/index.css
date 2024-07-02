@@ -1,0 +1,58 @@
+ *{ 
+  box-sizing: border-box;
+  margin:0;
+  /* padding:0;background-color: aliceblue; */
+
+
+}
+
+.Header{
+  display: grid;
+  height:100%;
+  grid-template-columns: 1fr 1fr ;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+
+    && .block{
+
+
+      && ul{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); 
+        gap:5px;
+        && li{
+          list-style: none;
+          padding:2rem;
+        }
+      }
+    }
+}
+.boxmodel{
+  display: grid;
+  /* gap:10px; */
+  /* grid-template-columns: repeat(1, 1fr); */
+}
+.box{
+  height:50vh;
+  /* background-color:aquamarine; */
+  width:auto;
+  margin:10px;
+} 
+
+
+
+
+.AdminGridBox{
+  background-color: burlywood;
+  font-style:bold;
+  font-size: 24px;
+  
+  && ul{
+    
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    
+  }
+}
