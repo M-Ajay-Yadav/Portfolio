@@ -14,15 +14,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// mongoose.connect('mongodb://localhost:27017/portfolio');
-
-// const db = mongoose.connection;
-// db.once('open', () => {
-//   console.log('Connected to MongoDB');
-// });
-
-// const personalInfoRouter = require('./routes/personalInfo');
-// app.use('/api/personalInfo', personalInfoRouter);
 
 app.use('/api/education', educationRoutes);
 app.use('/api/skills', skillRoutes);
