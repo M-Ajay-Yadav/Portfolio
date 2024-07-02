@@ -32,8 +32,7 @@ const Home = () => {
             />
           </h1>
           <p>
-            Welcome to my portfolio! I am a software developer specializing in
-            web development, AI, and cloud computing.
+          Welcome to my portfolio! I am an MCA graduate specializing in web development, AI, and cloud computing.
           </p>
           <ul className="btns nav-item">
             {/* <li className="btn">Resume</li> */}
