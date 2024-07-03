@@ -10,7 +10,7 @@ const Skills = () => {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/skills');
+        const response = await axios.get('http://localhost:5000/skills');
         console.log("response",response);
         setSkills(response.data);
         setLoading(false);

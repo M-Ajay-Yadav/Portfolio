@@ -13,7 +13,8 @@ const Education = () => {
   useEffect(() => {
     const fetchEducation = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/education');
+        const response = await axios.get('http://localhost:5000/education');
+        console.log(response)
         setEducation(response.data);
         setLoading(false);
       } catch (error) {

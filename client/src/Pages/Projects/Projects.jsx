@@ -10,7 +10,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/projects');
+        const response = await axios.get('http://localhost:5000/projects');
         console.log("response from project",response);
         setProjects(response.data);
         setLoading(false);
