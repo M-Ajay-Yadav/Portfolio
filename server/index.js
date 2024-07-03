@@ -24,7 +24,7 @@ app.use('${basePath}/skills', skillRoutes);
 app.use('${basePath}/projects', projectRoutes);
 
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 try {
     connectDb().then(()=>{
         app.listen(PORT,() => {
