@@ -10,15 +10,6 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-    //   .then((result) => {
-    //     console.log(result.text);
-    //     alert('Email sent successfully');
-    //   }, (error) => {
-    //     console.log(error.text);
-    //     alert('Failed to send email');
-    //   });
-
     setName('');
     setEmail('');
     setMessage('');
@@ -29,8 +20,9 @@ const ContactUs = () => {
   return (
     <div className="contact-us">
       <h2>Contact Us</h2>
-      <form action="https://formsubmit.co/el/pafexu" method="POST" >
-      {/* <form onSubmit={handleSubmit}> */}
+    
+      <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="60ebc18f-b148-4420-b62c-170302790285"/>
         <label>
           Name:
           <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
