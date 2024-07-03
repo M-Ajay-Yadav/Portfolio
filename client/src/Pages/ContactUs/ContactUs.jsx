@@ -10,34 +10,27 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text);
-        alert('Email sent successfully');
-      }, (error) => {
-        console.log(error.text);
-        alert('Failed to send email');
-      });
+    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    //   .then((result) => {
+    //     console.log(result.text);
+    //     alert('Email sent successfully');
+    //   }, (error) => {
+    //     console.log(error.text);
+    //     alert('Failed to send email');
+    //   });
 
     setName('');
     setEmail('');
     setMessage('');
   };
 
-  const sendWhatsAppMessage = () => {
-    const whatsappLink = `https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)}`;
-    window.open(whatsappLink, '_blank');
-  };
 
-  const handleSubmit = (e) => {
-    sendEmail(e);
-    sendWhatsAppMessage();
-  };
 
   return (
     <div className="contact-us">
       <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
+      <form action="https://formsubmit.co/el/pafexu" method="POST" >
+      {/* <form onSubmit={handleSubmit}> */}
         <label>
           Name:
           <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required />

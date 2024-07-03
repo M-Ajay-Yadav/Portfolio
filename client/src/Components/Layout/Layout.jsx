@@ -26,8 +26,8 @@ const Layout = ({ theme, toggleBackground,setTheme }) => {
         <Education />
         <Skills />
         <Projects />
-        <ContactUs/>
-        <Footer />
+        <ContactUs  />
+        <Footer  />
       </div>
 
       

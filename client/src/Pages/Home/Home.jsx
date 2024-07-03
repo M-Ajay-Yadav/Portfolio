@@ -34,11 +34,11 @@ const Home = () => {
           <p>
           Welcome to my portfolio! I am an MCA graduate specializing in web development, AI, and cloud computing.
           </p>
-          <ul className="btns nav-item">
+          <ul className="btns">
             {/* <li className="btn">Resume</li> */}
             <li className="btn">
               <a href={file} download={`M_Ajay_Yadav.pdf`}
-               className="nav-link"
+               className="nav-link nav-item"
                activeClassName="active-link">
                 Resume
               </a>
@@ -49,7 +49,7 @@ const Home = () => {
               <a
                 href="https://wa.me/+919573069748?text=I%20am%20interested%20in%20hiring%20you"
                 target="_blank"
-                 className="nav-link"
+                 className="nav-link nav-item"
               activeClassName="active-link"
               >
                 Hire me

@@ -28,31 +28,31 @@ const Header = ({ theme, setTheme,toggleBackground }) => {
           </IconContext.Provider>
         </div>
         <ul className={`nav-list ${menuOpen ? "nav-list-open" : ""}`}>
-          <li className="nav-item">
             <a href="#Homecomponent" className="nav-link" activeClassName="active-link">
+          <li className="nav-item">
               Home
-            </a>
           </li>
-          <li className="nav-item">
+            </a>
             <a href="#AboutComponent" className="nav-link" activeClassName="active-link">
+          <li className="nav-item">
               About
-            </a>
           </li>
-          <li className="nav-item">
+            </a>
             <a href="#educationComponent" className="nav-link" activeClassName="active-link">
+          <li className="nav-item">
               Education
-            </a>
           </li>
-          <li className="nav-item">
+            </a>
             <a href="#SkillsComponent" className="nav-link" activeClassName="active-link">
-              Skills
-            </a>
-          </li>
           <li className="nav-item">
-            <a href="#ProjectComponent" className="nav-link" activeClassName="active-link">
-              Projects
-            </a>
+              Skills
           </li>
+            </a>
+            <a href="#ProjectComponent" className="nav-link" activeClassName="active-link">
+          <li className="nav-item">
+              Projects
+          </li>
+            </a>
         </ul>
         <div className="iconbox" onClick={toggleBackground}>
           <IconContext.Provider value={{ color: "red", className: "logo-icon", size: 50 }}>

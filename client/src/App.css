@@ -14,12 +14,18 @@
 }
 
 .light {
-  background-color: #31b0ef; /* light yellow */
+  /* background-color: #31b0ef; */
+  /* light blue color */
+  background-color: #1340f7; /* light yellow */
   /* color:#2c3e50 */
 }
 
 .dark {
   /* background-color: #3e556b; dark blue */
   /* color:#fffacd; */
- background-color:  #3e5d28;
+ /* background-color:  #3e5d28; */
+ /* background-color:  #1E1E1E; */
+ background-color: #4F4F4F;
+ /* color:#5196ef; */
+ /* background-color:  #B0B0B0; */
 }

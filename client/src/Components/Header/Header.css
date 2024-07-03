@@ -32,6 +32,9 @@ body {
 
 .nav-item {
   margin-left: 20px;
+  padding:10px;
+  background-color: #61dafb;
+  border-radius: 50px;
 }
 
 .nav-link {
@@ -40,12 +43,13 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #61dafb;
+.nav-item:hover {
+  
+background-color: #0000EE;
 }
 
 .active-link {
-  border-bottom: 2px solid #61dafb;
+  border-bottom: 2px solid #0000EE;
 }
 
 .iconbox {
