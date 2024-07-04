@@ -6,6 +6,7 @@ const Skill = require('../Models/Skill');
 router.get('/', async (req, res) => {
   try {
     const skills = await Skill.find();
+    console.log(skills)
     res.json(skills);
   } catch (err) {
     res.status(500).json({ message: err.message });

@@ -116,6 +116,7 @@
   }
   .btn{
     margin:20px;
+    list-style: none;
   }
   
   .active-link {

@@ -19,9 +19,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-app.use('${basePath}/education', educationRoutes);
-app.use('${basePath}/skills', skillRoutes);
-app.use('${basePath}/projects', projectRoutes);
+app.use(`${basePath}education`, educationRoutes);
+app.use(`${basePath}skills`, skillRoutes);
+app.use(`${basePath}projects`, projectRoutes);
+console.log(`${basePath}`)
 
 
 const PORT = process.env.PORT || 5000;

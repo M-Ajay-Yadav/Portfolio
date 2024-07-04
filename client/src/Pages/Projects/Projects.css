@@ -29,7 +29,7 @@ body {
   }
   
   .project-item {
-    /* background: #ffffff; */
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -64,5 +64,15 @@ body {
   
   .project-link:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 800px) {
+    .projects-list{
+      display:flex;
+      flex-direction: column;
+    }
+    .project-item{
+      width:100%
+    }
   }
   

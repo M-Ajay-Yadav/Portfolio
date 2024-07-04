@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import './Projects.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./Projects.css";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -10,8 +10,8 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/projects');
-        console.log("response from project",response);
+        const response = await axios.get("http://localhost:5000/projects");
+        console.log("response from project", response);
         setProjects(response.data);
         setLoading(false);
       } catch (error) {
@@ -34,7 +34,12 @@ const Projects = () => {
           <div key={index} className="project-item">
             <h2 className="project-name">{project.title}</h2>
             <p className="project-description">{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link "
+            >
               View Project
             </a>
           </div>
