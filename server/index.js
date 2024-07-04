@@ -2,12 +2,12 @@ require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const connectDb = require("../utils/db");
+const connectDb = require("./utils/db");
 const bodyParser = require('body-parser');
 const url = require('url');
-const educationRoutes = require('../Routes/education');
-const skillRoutes = require('../Routes/skill');
-const projectRoutes = require('../Routes/project');
+const educationRoutes = require('./Routes/education');
+const skillRoutes = require('./Routes/skill');
+const projectRoutes = require('./Routes/project');
 
 
 const BASE_URL = process.env.BASE_URL;
