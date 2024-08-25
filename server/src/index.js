@@ -10,6 +10,8 @@ const skillRoutes = require("../Routes/skill");
 const projectRoutes = require("../Routes/project");
 
 const BASE_URL = process.env.RENDER_EXTERNAL_URL;
+// const BASE_URL = "https://localhost/" || process.env.RENDER_EXTERNAL_URL;
+
 // const BASE_URL = process.env.BASE_URL;
 if (!BASE_URL) {
   throw new Error("BASE_URL is not defined");

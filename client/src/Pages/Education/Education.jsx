@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "./Education.css";
 import {
   VerticalTimeline,
@@ -7,29 +6,24 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { MdSchool } from "react-icons/md";
+import Loading from "../Loading/Loading";
 
-const Education = () => {
-  const [education, setEducation] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+const Education = ({ education, loading, error }) => {
+  // const [education, setEducation] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchEducation = async () => {
-      try {
-        const response = await axios.get("http://localhost:5000/education");
-        console.log(response);
-        setEducation(response.data);
-        setLoading(false);
-      } catch (error) {
-        setError(error.message);
-        setLoading(false);
-      }
-    };
+  // if (loading) return <div>Loading...</div>;
+  // if (error) return <div>Error: {error}</div>;
 
-    fetchEducation();
-  }, []);
-
-  if (loading) return <div>Loading...</div>;
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <Loading color="#3498db" size={50} />
+        <p>Loading data from the backend...</p>
+      </div>
+    );
+  }
   if (error) return <div>Error: {error}</div>;
 
   return (

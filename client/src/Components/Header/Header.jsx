@@ -77,7 +77,8 @@ const Header = ({ theme, setTheme, toggleBackground }) => {
             value={{ color: "red", className: "logo-icon", size: 50 }}
           >
             {/* <MdFormatColorFill /> */}
-            <GiEvilMoon />
+            <GiScorpion />
+            {/* <GiEvilMoon /> */}
           </IconContext.Provider>
         </div>
       </nav>

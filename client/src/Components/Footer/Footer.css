@@ -5,6 +5,7 @@ body {
     font-family: Arial, sans-serif;
     background: #f0f0f0;
     color:#282c34;
+    /* color:#bed35f; */
   }
   
   .footer-container {
@@ -24,6 +25,8 @@ body {
   .footer-description {
     font-size: 1.2em;
     margin-bottom: 20px;
+    color:#bed35f;
+
     /* color: #b0b0b0; */
   }
   
@@ -39,7 +42,11 @@ body {
   }
   
   .social-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    /* align-items: center; */
+    justify-items: center;
+    color:#00ff22;
+    /* text-decoration: underline; */
   }
   
   .footer-contact p {
@@ -53,10 +60,13 @@ body {
 
     text-decoration: none;
   }
-  
-  .footer-contact a:hover {
-    text-decoration: underline;
+  a:hover{
+    text-decoration: none;
   }
+  
+  /* .footer-contact a:hover {
+     text-decoration: underline; 
+  } */
   
   .footer-credit {
     margin-top: 20px;
