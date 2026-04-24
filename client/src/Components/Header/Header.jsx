@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GiScorpion } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import { MdFormatColorFill, MdMenu } from "react-icons/md";
-import { GiEvilMoon } from "react-icons/gi";
+// import { GiEvilMoon } from "react-icons/gi";
 
 import "./Header.css";
 
@@ -32,42 +32,42 @@ const Header = ({ theme, setTheme, toggleBackground }) => {
           <a
             href="#Homecomponent"
             className="nav-link"
-            activeClassName="active-link"
+            // // activeClassName="active-link"
           >
             <li className="nav-item">Home</li>
           </a>
           <a
             href="#AboutComponent"
             className="nav-link"
-            activeClassName="active-link"
+            // // activeClassName="active-link"
           >
             <li className="nav-item">About</li>
           </a>
           <a
             href="#educationComponent"
             className="nav-link"
-            activeClassName="active-link"
+            // // activeClassName="active-link"
           >
             <li className="nav-item">Education</li>
           </a>
           <a
             href="#SkillsComponent"
             className="nav-link"
-            activeClassName="active-link"
+            // // activeClassName="active-link"
           >
             <li className="nav-item">Skills</li>
           </a>
           <a
             href="#ProjectComponent"
             className="nav-link"
-            activeClassName="active-link"
+            // // activeClassName="active-link"
           >
             <li className="nav-item">Projects</li>
           </a>
           <a
             href="#ContactUsComponent"
             className="nav-link"
-            activeClassName="active-link"
+            // activeClassName="active-link"
           >
             <li className="nav-item">ContactUs</li>
           </a>

@@ -41,7 +41,7 @@ const Home = () => {
                 href={file}
                 download={`M_Ajay_Yadav.pdf`}
                 className="nav-link nav-item"
-                activeClassName="active-link"
+                activeClassName="active"
               >
                 Resume
               </a>
